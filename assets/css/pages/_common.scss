@@ -1,0 +1,14 @@
+// Common SCSS
+main {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+section {
+    position: relative;
+}
+
+.text-gray-800 {
+    color: $gray-800;
+}

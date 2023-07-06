@@ -1,0 +1,550 @@
+// Home Page SCSS here
+
+.heroHome-section {
+    height: 1008px;
+    background-color: $primary-500;
+    padding-top: 140px;
+    border-radius: 0 0 40px 40px;
+    z-index: 10;
+    @include laptop {
+        height: 908px;
+    }
+    @include tablet {
+        padding-top: 136px;
+        height: 700px;
+    }
+    & .curves {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+        &::before {
+            width: 1732px;
+            height: 1732px;
+            background-color: rgba($white, 60%);
+            left: 50%;
+            transform: translateX(-50%);
+            margin-left: -389px;
+            top: 493px;
+            @include tablet {
+                width: 754px;
+                height: 754px;
+                margin-left: -79px;
+                top: 453px;
+            }
+        }
+        &::after {
+            width: 2074px;
+            height: 2074px;
+            background-color: rgba($white, 20%);
+            right: 50%;
+            transform: translateX(50%);
+            margin-right: -307px;
+            top: 383px;
+            @include tablet {
+                width: 903px;
+                height: 903px;
+                margin-right: -277px;
+                top: 383px;
+            }
+        }
+    }
+    & .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 646px;
+            width: 100%;
+            @include mobile {
+                max-width: 335px;
+            }
+            & h1 {
+                margin-bottom: 24px;
+                @include tablet {
+                    margin-bottom: 12px;
+                }
+            }
+            & .form {
+                margin-top: 48px;
+                display: flex;
+                width: 100%;
+                max-width: 500px;
+                padding: 8px 8px 8px 24px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 1000px;
+                border: 1px solid $gray-100;
+                background: $white;
+                & input {
+                    flex: 1;
+                    padding: 12px 0;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    border: none;
+                    width: inherit;
+                }
+            }
+        }
+        & .images {
+            margin-top: 120px;
+            position: relative;
+            @include tablet {
+                margin-top: 64px;
+            }
+            & img {
+                position: absolute;
+                width: 684px;
+                height: 432px;
+                max-width: none;
+                top: 0;
+                border-radius: 32px;
+                box-shadow: 0 3.3060238361358643px 3.623039960861206px 0 rgba(0, 0, 0, 0.01), 0 9.140732765197754px 10.017241477966309px 0 rgba(0, 0, 0, 0.01), 0 22.007362365722656px 24.117658615112305px 0 rgba(0, 0, 0, 0.02), 0 73px 80px 0 rgba(0, 0, 0, 0.03);
+                @include laptop {
+                    width: 554px;
+                    height: 348px;
+                }
+                @include tablet {
+                    width: 248px;
+                    height: auto;
+                    border-radius: 16px;
+                }
+                &:first-child {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-left: -137px;
+                    @include tablet {
+                        margin-left: -42px;
+                    }
+                }
+                &:nth-child(2) {
+                    right: 50%;
+                    transform: translateX(50%);
+                    margin-right: -137px;
+                    top: 70px;
+                    @include tablet {
+                        top: 40px;
+                        margin-right: -42px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banking-section {
+    padding: 260px 0 120px;
+    @include laptop {
+        padding: 220px 0 80px;
+    }
+    @include tablet {
+        padding: 146px 0 45px;
+    }
+    & .block {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 120px;
+        @include laptop {
+            column-gap: 60px;
+        }
+        @include tablet {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        & .h3 {
+            @include tablet {
+                max-width: 228px;
+            }
+        }
+        & .cards {
+            display: grid;
+            grid-template-columns: 282px 282px;
+            grid-template-rows: 240px 240px 88px;
+            gap: 16px;
+            @include tablet {
+                grid-template-columns: 1fr;
+                grid-template-rows: 240px 240px 240px 240px 88px;
+            }
+            & li {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                background-color: $white;
+                border-radius: 16px;
+                padding: 24px 40px 24px 24px;
+                position: relative;
+                overflow: hidden;
+                z-index: 10;
+                box-shadow: 0 4.030873775482178px 4.417396068572998px 0 rgba(0, 0, 0, 0.01), 0 11.14484977722168px 12.213534355163574px 0 rgba(0, 0, 0, 0.01), 0 26.832504272460938px 29.405485153198242px 0 rgba(0, 0, 0, 0.02), 0 89.00534057617188px 97.54010009765625px 0 rgba(0, 0, 0, 0.03);
+                & img {
+                    margin-top: -10px;
+                    margin-left: -10px;
+                }
+                &::after {
+                    z-index: -10;
+                    width: 495px;
+                    height: 372px;
+                    background-image: url("../assets/images/svg/rings.svg");
+                    content: '';
+                    position: absolute;
+                }
+                &:nth-child(1) {
+                    &::after {
+                        transform: rotate(90deg);
+                        bottom: 170px;
+                        left: -130px;
+                    }
+                }
+                &:nth-child(2) {
+                    &::after {
+                        transform: rotate(173deg);
+                        bottom: -78px;
+                        left: 85px;
+                    }
+                }
+                &:nth-child(3) {
+                    &::after {
+                        transform: rotate(12deg);
+                        bottom: -78px;
+                        left: -22px;
+                    }
+                }
+                &:nth-child(4) {
+                    &::after {
+                        transform: rotate(-137deg);
+                        bottom: -108px;
+                        right: -332px;
+                    }
+                }
+                &:last-child {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 14px;
+                    grid-column-end: 3;
+                    grid-column-start: 1;
+                    @include tablet {
+                        grid-column-end: 2;
+                        grid-column-start: 1;
+                    }
+                    & img {
+                        margin-top: 0;
+                    }
+                    &::after {
+                        transform: rotate(-137deg);
+                        bottom: -298px;
+                        right: -182px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.why-section {
+    padding: 120px 0;
+    @include laptop {
+        padding: 80px 0;
+    }
+    @include tablet {
+        padding: 45px 0;
+    }
+    & .block {
+        display: flex;
+        gap: 32px;
+        border-radius: 24px;
+        background-color: $white;
+        justify-content: space-between;
+        overflow: hidden;
+        box-shadow: 0 4.030873775482178px 4.417396068572998px 0 rgba(0, 0, 0, 0.01), 0 11.14484977722168px 12.213534355163574px 0 rgba(0, 0, 0, 0.01), 0 26.832504272460938px 29.405485153198242px 0 rgba(0, 0, 0, 0.02), 0 89.00534057617188px 97.54010009765625px 0 rgba(0, 0, 0, 0.03);
+        @include tablet {
+            flex-direction: column;
+            gap: 0;
+        }
+        & .image {
+            background-color: $primary-200;
+            flex-shrink: 0;
+            @include laptop {
+                width: 50%;
+            }
+            @include tablet {
+                width: 100%;
+            }
+            & img {
+                @include laptop {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                @include tablet {
+                    width: 100%;
+                    height: 571px;
+                    object-fit: cover;
+                }
+            }
+        }
+        & .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 50px 32px;
+            @include laptop {
+                flex-shrink: 0;
+                width: 50%;
+            }
+            @include tablet {
+                width: 100%;
+                padding: 32px 24px 60px;
+            }
+            & .h3 {
+                margin-bottom: 16px;
+                max-width: 445px;
+            }
+            & p {
+                max-width: 563px;
+                margin-bottom: 40px;
+            }
+            & ul {
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+                & li {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    color: $primary-900;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.empowerment-section {
+    padding: 120px 0;
+    position: relative;
+    z-index: 10;
+    @include laptop {
+        padding: 80px 0;
+    }
+    @include tablet {
+        padding: 45px 0;
+    }
+    &::after {
+        z-index: -10;
+        width: 1336px;
+        height: 1065px;
+        background-image: url("../assets/images/svg/ring-large.svg");
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -65px;
+        margin-left: 123px;
+    }
+    & .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        & .h3 {
+            max-width: 662px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        & > p {
+            max-width: 829px;
+            text-align: center;
+        }
+        & .cards {
+            margin-top: 64px;
+            margin-bottom: 48px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            @include tablet {
+                margin-top: 16px;
+                margin-bottom: 40px;
+                grid-template-columns: 1fr;
+            }
+            & li {
+                border-radius: 16px;
+                background: $white;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 24px 34px;
+                align-items: flex-start;
+                box-shadow: 0 4.030873775482178px 4.417396068572998px 0 rgba(0, 0, 0, 0.01), 0 11.14484977722168px 12.213534355163574px 0 rgba(0, 0, 0, 0.01), 0 26.832504272460938px 29.405485153198242px 0 rgba(0, 0, 0, 0.02), 0 89.00534057617188px 97.54010009765625px 0 rgba(0, 0, 0, 0.03);
+                & h5 {
+                    margin-top: 44px;
+                    margin-bottom: 16px;
+                }
+                & img {
+                    margin-left: -12px;
+                }
+            }
+        }
+    }
+}
+
+.discover-section {
+    padding: 120px 0 0;
+    position: relative;
+    z-index: 0;
+    @include laptop {
+        padding: 80px 0 0;
+    }
+    @include tablet {
+        padding: 45px 0 0;
+    }
+    &::after {
+        z-index: -10;
+        width: 1530px;
+        height: 1530px;
+        background-image: url("../assets/images/svg/ring-mid.svg");
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: -341px;
+        margin-right: -20px;
+    }
+    & .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 580px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 106px;
+            @include tablet {
+                margin-bottom: 22px;
+            }
+            & .h3 {
+                margin-bottom: 16px;
+            }
+            & p {
+                margin-bottom: 40px;
+            }
+        }
+        & .bottom {
+            position: relative;
+            @include tablet {
+                margin-bottom: -30px;
+            }
+            @include mobile {
+                align-self: flex-start;
+            }
+            &::after {
+                z-index: -10;
+                width: 1020px;
+                height: 1020px;
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50px;
+                transform: translateX(-50%);
+                border-radius: 1020px;
+                opacity: 0.6;
+                background: #4DDD96;
+                filter: blur(296.5116271972656px);
+            }
+            & .lg {
+                display: block;
+                @include tablet {
+                    display: none;
+                }
+            }
+            & .xs {
+                display: none;
+                @include tablet {
+                    display: block;
+                }
+            }
+            & img {
+                width: 1102px;
+                @include tablet {
+                    width: 548px;
+                    max-width: none;
+                }
+            }
+        }
+    }
+}
+
+.apply-section {
+    & .block {
+        display: flex;
+        background-color: $gray-900;
+        padding: 120px 80px;
+        border-radius: 40px 40px 0 0;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        @include tablet {
+            padding: 120px 20px 32px;
+        }
+        & .bg-rings {
+            position: absolute;
+            bottom: -203px;
+            right: -610px;
+            z-index: -10;
+        }
+        & .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            & h2 {
+                color: $white;
+                max-width: 719px;
+                margin-bottom: 16px;
+                @include tablet {
+                    max-width: 335px;
+                }
+            }
+            & h6 {
+                color: $gray-25;
+                max-width: 440px;
+
+            }
+            & .form {
+                margin-top: 48px;
+                display: flex;
+                max-width: 560px;
+                width: 100%;
+                padding: 8px 8px 8px 24px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 1000px;
+                background: $white;
+                & input {
+                    flex: 1;
+                    width: inherit;
+                    padding: 12px 0;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    border: none;
+                }
+            }
+        }
+    }
+}
