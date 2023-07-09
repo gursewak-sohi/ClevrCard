@@ -78,26 +78,9 @@
                     margin-bottom: 12px;
                 }
             }
-            & .form {
+            & .email-form {
                 margin-top: 48px;
-                display: flex;
-                width: 100%;
                 max-width: 500px;
-                padding: 8px 8px 8px 24px;
-                align-items: center;
-                gap: 10px;
-                border-radius: 1000px;
-                border: 1px solid $gray-100;
-                background: $white;
-                & input {
-                    flex: 1;
-                    padding: 12px 0;
-                    font-size: 18px;
-                    line-height: 28px;
-                    font-weight: 500;
-                    border: none;
-                    width: inherit;
-                }
             }
         }
         & .images {
@@ -390,7 +373,7 @@
                 padding: 20px 24px 34px;
                 align-items: flex-start;
                 box-shadow: 0 4.030873775482178px 4.417396068572998px 0 rgba(0, 0, 0, 0.01), 0 11.14484977722168px 12.213534355163574px 0 rgba(0, 0, 0, 0.01), 0 26.832504272460938px 29.405485153198242px 0 rgba(0, 0, 0, 0.02), 0 89.00534057617188px 97.54010009765625px 0 rgba(0, 0, 0, 0.03);
-                & h5 {
+                & h4 {
                     margin-top: 44px;
                     margin-bottom: 16px;
                 }
@@ -467,18 +450,6 @@
                 background: #4DDD96;
                 filter: blur(296.5116271972656px);
             }
-            & .lg {
-                display: block;
-                @include tablet {
-                    display: none;
-                }
-            }
-            & .xs {
-                display: none;
-                @include tablet {
-                    display: block;
-                }
-            }
             & img {
                 width: 1102px;
                 @include tablet {
@@ -490,7 +461,7 @@
     }
 }
 
-.apply-section {
+.applyHome-section {
     & .block {
         display: flex;
         background-color: $gray-900;
@@ -525,25 +496,9 @@
                 max-width: 440px;
 
             }
-            & .form {
+            & .email-form {
                 margin-top: 48px;
-                display: flex;
                 max-width: 560px;
-                width: 100%;
-                padding: 8px 8px 8px 24px;
-                align-items: center;
-                gap: 10px;
-                border-radius: 1000px;
-                background: $white;
-                & input {
-                    flex: 1;
-                    width: inherit;
-                    padding: 12px 0;
-                    font-size: 18px;
-                    line-height: 28px;
-                    font-weight: 500;
-                    border: none;
-                }
             }
         }
     }

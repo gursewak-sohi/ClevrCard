@@ -12,3 +12,32 @@ section {
 .text-gray-800 {
     color: $gray-800;
 }
+
+.sm-hidden {
+    display: block;
+    @include tablet {
+        display: none;
+    }
+}
+
+.sm {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+}
+
+.xs-hidden {
+    display: block;
+    @include mobile {
+        display: none;
+    }
+}
+
+
+.xs {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}

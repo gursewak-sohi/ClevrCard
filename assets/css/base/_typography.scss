@@ -39,15 +39,7 @@ h1 {
     }
 }
 
-.p,
-p {
-    font-size: 16px;
-    color: $gray-600;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
 
-}
 
 .h2,
 h2 {
@@ -94,11 +86,11 @@ h4 {
 
 .h5,
 h5 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: $font-Inter;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 30px;
     color: $primary-900;
 }
 
@@ -109,4 +101,23 @@ h6 {
     font-weight: 500;
     line-height: 28px;
     color: $gray-700;
+}
+
+
+.p,
+p {
+    font-size: 16px;
+    color: $gray-600;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+small, .small {
+    font-size: 14px;
+    color: $gray-600;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }

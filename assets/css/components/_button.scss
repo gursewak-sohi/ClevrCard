@@ -19,9 +19,6 @@
         opacity: 0.5;
         pointer-events: none;
     }
-    &:active {
-        transform: scale(0.95);
-    }
 }
 
 .btn-sm {
@@ -47,6 +44,9 @@
     &:hover {
         color: $gray-900;
     }
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
 .btn-light {
@@ -55,6 +55,9 @@
     box-shadow: 0 26.832504272460938px 29.405485153198242px 0 rgba(0, 0, 0, 0.02), 0 89.00534057617188px 97.54010009765625px 0 rgba(0, 0, 0, 0.03);
     &:hover {
         color: $primary-850;
+    }
+    &:active {
+        transform: scale(0.95);
     }
 }
 
