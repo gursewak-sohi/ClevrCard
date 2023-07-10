@@ -41,3 +41,19 @@ section {
         display: block;
     }
 }
+
+.card-item {
+    border-radius: 16px;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px 34px;
+    align-items: flex-start;
+    & h4 {
+        margin-top: 44px;
+        margin-bottom: 16px;
+    }
+    & img {
+        margin-left: -12px;
+    }
+}

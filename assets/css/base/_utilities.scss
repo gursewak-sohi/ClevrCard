@@ -29,11 +29,14 @@
 }
 
 .collapse {
-    @include tablet {
-        overflow: hidden;
-        transition: height 300ms cubic-bezier(.49, .025, .49, 1);
-        &:not(.active) {
-            height: 0;
+    overflow: hidden;
+    transition: height 300ms cubic-bezier(.49, .025, .49, 1);
+    &:not(.active)  {
+        height: 0;
+    }
+    &.sub-menu-wrapper {
+        @include min-laptop {
+            height: auto !important;
         }
     }
 }
@@ -42,8 +45,11 @@
 [data-toggler] {
     & .collapse-arrow {
         transition: 300ms all cubic-bezier(.49, .025, .49, 1);
+        & img {
+            transition: 300ms all cubic-bezier(.49, .025, .49, 1);
+        }
     }
-    &.active .collapse-arrow {
+    &.active .collapse-arrow img {
         transform: rotate(-180deg);
     }
 }

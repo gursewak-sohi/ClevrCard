@@ -40,7 +40,7 @@
         let collapseLinks = document.querySelectorAll(collapseLinkID),
             collapseContent = document.querySelectorAll(collapseContentID);
 
-        if (collapseLinks && collapseContent && wrapperID && smWidth) {
+        if (collapseLinks && collapseContent && wrapperID) {
             const openCollapse = el => {
                 let selectedLink = el.currentTarget,
                     showId = el.currentTarget.dataset.collapse,
@@ -88,7 +88,7 @@
 
     ScrollTrigger.defaults({
         toggleActions: "play none none none",
-        start: "top 90%",
+        start: "top bottom",
     });
 
     // Animation Slide up

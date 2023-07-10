@@ -344,7 +344,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-       
+
         & .h3 {
             max-width: 662px;
             text-align: center;
@@ -366,20 +366,7 @@
                 grid-template-columns: 1fr;
             }
             & li {
-                border-radius: 16px;
-                background: $white;
-                display: flex;
-                flex-direction: column;
-                padding: 20px 24px 34px;
-                align-items: flex-start;
                 box-shadow: 0 4.030873775482178px 4.417396068572998px 0 rgba(0, 0, 0, 0.01), 0 11.14484977722168px 12.213534355163574px 0 rgba(0, 0, 0, 0.01), 0 26.832504272460938px 29.405485153198242px 0 rgba(0, 0, 0, 0.02), 0 89.00534057617188px 97.54010009765625px 0 rgba(0, 0, 0, 0.03);
-                & h4 {
-                    margin-top: 44px;
-                    margin-bottom: 16px;
-                }
-                & img {
-                    margin-left: -12px;
-                }
             }
         }
     }
