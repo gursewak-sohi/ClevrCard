@@ -1,0 +1,68 @@
+// Scalable Limit Page
+
+.finance-section {
+    padding: 120px 0;
+    position: relative;
+    z-index: 10;
+    @include laptop {
+      padding: 100px 0;
+    }
+    @include tablet {
+      padding: 90px 0;
+    }
+    & .block {
+        padding: 120px 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+        @include laptop {
+          padding: 100px 40px;
+        }
+        @include tablet {
+          padding: 0;
+          gap: 16px;
+        }
+        & .h6 {
+            max-width: 578px;
+        }
+    }
+    & .bg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -10;
+        @include tablet {
+          width: 335px
+        }
+        & img {
+          max-width: none;
+          @include tablet {
+            width: 100%
+          }
+        }
+    }
+}
+
+.blocks-section {
+    padding: 120px 0;
+    @include laptop {
+      padding: 100px 0;
+    }
+    @include tablet {
+      padding: 0;
+    }
+    & .block {
+        width: 100%;
+        & .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            @include tablet {
+              grid-template-columns: 1fr;
+            }
+        }
+    }
+}

@@ -27,9 +27,9 @@
         align-items: flex-start;
         position: relative;
         padding: 140px 0 0;
-        height: 800px;
+        min-height: 800px;
         @include tablet {
-            padding: 136px 0 0;
+            padding: 136px 0 50px;
         }
         & .content {
             display: flex;
@@ -58,7 +58,7 @@
             @include laptop {
                 transform: scale(0.7);
             }
-            @include laptop {
+            @include tablet {
                 transform: scale(1);
             }
             & img {
@@ -84,7 +84,7 @@
                         transform: rotate(16deg);
                     }
                     @include mobile {
-                      width: 250px;
+                        width: 250px;
                     }
                 }
                 &:nth-child(2) {
@@ -102,9 +102,64 @@
                         right: -43px;
                     }
                     @include mobile {
-                      width: 250px;
+                        width: 250px;
                     }
                 }
+            }
+        }
+        & .limit-images {
+            position: absolute;
+            right: 61px;
+            top: 164px;
+            @include laptop {
+                transform: scale(0.8);
+                top: auto;
+                bottom: -70px;
+                right: 0px;
+            }
+            @include tablet {
+                transform: scale(1);
+                position: static;
+                order: -1;
+                margin: 0 auto 32px;
+            }
+            & img {
+                width: 423px;
+                transform: rotate(7.89deg);
+                border-radius: 30px;
+                background: #FFF;
+                /* card_shadow */
+                box-shadow: 0 3.3060238361358643px 3.623039960861206px 0 rgba(0, 0, 0, 0.01), 0 9.140732765197754px 10.017241477966309px 0 rgba(0, 0, 0, 0.01), 0 22.007362365722656px 24.117658615112305px 0 rgba(0, 0, 0, 0.02), 0 73px 80px 0 rgba(0, 0, 0, 0.03);
+                @include tablet {
+                    width: 241px;
+                    border-radius: 16px;
+                }
+            }
+        }
+        & .loan-images { 
+            position: absolute;
+            right: -296px;
+            top: 112px;
+            @include desktop {
+                right: -376px;
+            }
+            @include laptop {
+                transform: scale(0.7);
+                right: -456px;
+            }
+            @include tablet {
+                position: relative;
+                right: 0;
+                top: 80px;
+                transform: scale(1);
+                right: -100px;
+            }
+            @include mobile {
+                right: auto;
+                left: -30px;
+                width: 618px;
+                max-width: none;
+                margin-bottom: -40px;
             }
         }
 
