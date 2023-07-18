@@ -11,14 +11,7 @@
     const toggleMenu = (toggleID, toggleNav) => {
         let toggleLink = document.querySelector(toggleID),
             toggleItem = document.querySelector(toggleNav),
-            headerLinks = document.querySelectorAll("#toggleNav a"),
             root = document.getElementsByTagName('html')[0];
-        // headerLinks.forEach(link => {
-        //     link.onclick = (e) => {
-        //         root.classList.remove('hide-scroll');
-        //         toggleItem.classList.remove("active");
-        //     }
-        // });
         if (toggleLink && toggleItem) {
             toggleLink.onclick = () => {
                 if (toggleItem.classList.contains('active')) {

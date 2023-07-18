@@ -107,6 +107,59 @@
                 }
             }
         }
+        & .credit-images {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            @include desktop {
+                transform: scale(0.9);
+            }
+            @include laptop {
+                transform: scale(0.7);
+            }
+            @include tablet {
+                transform: scale(1);
+                bottom: -30px;
+            }
+            & img {
+                border-radius: 32px;
+                box-shadow: 0 3.3060238361358643px 3.623039960861206px 0 rgba(0, 0, 0, 0.01), 0 9.140732765197754px 10.017241477966309px 0 rgba(0, 0, 0, 0.01), 0 22.007362365722656px 24.117658615112305px 0 rgba(0, 0, 0, 0.02), 0 73px 80px 0 rgba(0, 0, 0, 0.03);
+                position: absolute;
+                max-width: none;
+                @include tablet {
+                    border-radius: 16px;
+                }
+                &:first-child {
+                    width: 645px;
+                    height: 407px;
+                    z-index: 10;
+                    right: 27px;
+                    bottom: 60px;
+                    @include tablet {
+                        width: 320px;
+                        height: auto;
+                        right: -24px;
+                        bottom: -15px;
+                        transform: rotate(19deg);
+                    }
+
+                }
+                &:nth-child(2) {
+                    width: 573px;
+                    height: 362px;
+                    transform: rotate(28deg);
+                    bottom: 238px;
+                    right: -83px;
+                    @include tablet {
+                        width: 290px;
+                        height: auto;
+                        transform: rotate(28deg);
+                        bottom: 56px;
+                        right: -79px;
+                    }
+                }
+            }
+        }
         & .limit-images {
             position: absolute;
             right: 61px;
@@ -115,7 +168,7 @@
                 transform: scale(0.8);
                 top: auto;
                 bottom: -70px;
-                right: 0px;
+                right: 0;
             }
             @include tablet {
                 transform: scale(1);
@@ -136,7 +189,7 @@
                 }
             }
         }
-        & .loan-images { 
+        & .loan-images {
             position: absolute;
             right: -296px;
             top: 112px;
